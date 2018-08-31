@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'Deflated-And-Sloppy';
+	src: url(Deflated-And-Sloppy.woff)
+}
+
+body {
+	background-color: #feffd2;
+	font-family: 'Deflated-And-Sloppy', Fallback, sans-serif;
+}
+
+.pad {
+	padding-left: 12%;
+}
+
+.header {
+	font-family: 'Courier New';
+}
+
+.container {
+	width: 1000px;
+	position: fixed;
+}
+
+.box {
+	display: inline-block;
+	float: left;
+	border-style: double;
+	border-color: coral;
+	padding: 0.5%;
+	margin: 1%;
+	background:white;
+	font-size: 16px;
+}
+
+.game-design {
+	border-style: solid;
+	border-color: gray;
+	padding: 0.5%;
+	background: white;
+	font-size: 34px;
+}
+
+.right {
+	display: inline-block;
+	float: right;
+	right: 0;
+}
+
+.left {
+	display: inline-block;
+	float: left;
+	padding-right: 1%;
+	left: 0;
+}
+
+.parent {
+	background-image: url("ZJF0.gif");
+	border-bottom: inset red 1px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.bottom {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	top: 0;
+	left: 0;
+}
+
+.top {
+	position: absolute;
+	top: 55%;
+	left: 80%;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.side-to-side {
+	animation-name: side-to-side;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-right: 5px;
+}
+
+@keyframes side-to-side {
+	from { transform: translate(0, 0px); }
+	65%  { transform: translate(15px, 0px); }
+	to   { transform: translate(-0, 0px); }
+}
+
+.rainbow {
+   animation-name: rainbow;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+ }
+ 
+ @keyframes rainbow{
+   0%{color: cyan;}	
+   10%{color: pink;}	
+	 20%{color: purple;}
+	 40%{color: magenta;}
+	 60%{color: greenyellow;}
+	 100%{color: azure;}
+	 100%{color: cyan;}	
+ }
