@@ -115,11 +115,11 @@ body {
  }
  
  @keyframes rainbow{
-   0%{color: cyan;}	
-   10%{color: pink;}	
-	 20%{color: purple;}
-	 40%{color: magenta;}
-	 60%{color: greenyellow;}
-	 100%{color: azure;}
-	 100%{color: cyan;}	
+   	0%{color: cyan;}	
+   	10%{color: pink;}	
+	20%{color: purple;}
+	40%{color: magenta;}
+	60%{color: greenyellow;}
+	100%{color: azure;}
+	100%{color: cyan;}	
  }
